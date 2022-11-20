@@ -1,5 +1,9 @@
 * {
   margin: 0;
+  
+  
+   // tambahboxsize
+  box-sizing: border-box;
 }
 
 body {
@@ -44,6 +48,26 @@ color: transparent;}
   flex: 6;
 }
 
+// menu container
+.menu-container ul li {
+  color: white;
+}
+
+// menu container hover before
+.menu-container:hover::before {
+  filter: blur(3);
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+// menu container hover
+.menu-container:hover {
+  color: crimson;
+  box-shadow: none;
+  text-shadow: 0 0 15px crimson;
+}
+
+
 .menu-list {
   display: flex;
   list-style: none;
@@ -59,7 +83,33 @@ color: transparent;}
   color: white;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  
+  // tambah item
+   text-transform: uppercase;
+   width: 100%;
+   text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+   line-height: 0.70em;
+   outline: none;
+   animation: animate 5s linear infinite;
 }
+
+// menu list item active hover before
+.menu-list-item.active:hover:before {
+  filter: blur(3);
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+// menu list item active hover
+.menu-list-item.active:hover {
+  color: crimson;
+  box-shadow: none;
+  text-shadow: 0 0 15px crimson;
+}
+
+
+
 
 .profile-container {
   flex: 2;
@@ -91,7 +141,20 @@ color: transparent;}
   align-items: center;
   padding-top: 60px;
   cursor: pointer;
+  
+  // tambah point
+  transition: 0.5s;
+  transition-property: background;
 }
+
+
+// sidebar hover
+.sidebar:hover {
+  background: black;
+}
+
+
+
 
 .left-menu-icon {
   color: white;
@@ -99,9 +162,32 @@ color: transparent;}
   margin-bottom: 40px;
 }
 
+
+// left menu icon hover before
+.left-menu-icon:hover:before {
+  filter: blur(3);
+  transform: scale(1.2);
+  box-shadow: none;
+
+  
+//  left menu icon hover
+.left-menu-icon:hover {
+  color: crimson;
+  box-shadow: none;
+  text-shadow: 0 0 15px crimson;
+
+}
+
+
+
+
+
 .container {
   background-color: #151515;
   color: white;
+  
+  // width
+  width: 100%;
 }
 
 .content-container {
