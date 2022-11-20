@@ -1,8 +1,5 @@
 * {
   margin: 0;
-
-  // tambahboxsize
-  box-sizing: border-box;
 }
 
 body {
@@ -17,12 +14,6 @@ body {
   top: 0;
 }
 
-
-
-
-
-
-
 .navbar-container {
   display: flex;
   align-items: center;
@@ -31,14 +22,6 @@ body {
   color: white;
   font-family: "Sen", sans-serif;
 }
-
-
-
-
-
-
-
-
 
 .logo-container {
   flex: 1;
@@ -61,39 +44,6 @@ color: transparent;}
   flex: 6;
 }
 
-
-
-
-
-.menu-container ul li {
-  color: white;
-}
-
-
-
-.menu-container:hover::before {
-  filter: blur(3);
-  transform: scale(1.2);
-  box-shadow: none;
-}
-.menu-container:hover {
-  color: crimson;
-  box-shadow: none;
-  text-shadow: 0 0 15px crimson;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .menu-list {
   display: flex;
   list-style: none;
@@ -106,44 +56,10 @@ color: transparent;}
 
 .menu-list-item.active {
   font-weight: bold;
-
   color: white;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: right;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-  line-height: 0.70em;
-  outline: none;
-  animation: animate 5s linear infinite;
-
-
-
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-
-
-
-
-.menu-list-item.active:hover:before {
-  filter: blur(3);
-  transform: scale(1.2);
-  box-shadow: none;
-}
-.menu-list-item.active:hover {
-  color: crimson;
-  box-shadow: none;
-  text-shadow: 0 0 15px crimson;
-}
-
-
-
-
-
-
-
-
-
 
 .profile-container {
   flex: 2;
@@ -175,24 +91,7 @@ color: transparent;}
   align-items: center;
   padding-top: 60px;
   cursor: pointer;
-
-
-
-  transition: 0.5s;
-  transition-property: background;
 }
-
-
-
-.sidebar:hover {
-  background: black;
-
-}
-
-
-
-
-
 
 .left-menu-icon {
   color: white;
@@ -200,41 +99,10 @@ color: transparent;}
   margin-bottom: 40px;
 }
 
-
-
-
-
-.left-menu-icon:hover:before {
-  filter: blur(3);
-  transform: scale(1.2);
-  box-shadow: none;
-}
-.left-menu-icon:hover {
-  color: crimson;
-  box-shadow: none;
-  text-shadow: 0 0 15px crimson;
-
-}
-
-
-
-
-
-
-
-
 .container {
   background-color: #151515;
   color: white;
-  width: 100%; 
 }
-
-
-
-
-
-
-
 
 .content-container {
   margin-left: 50px;
